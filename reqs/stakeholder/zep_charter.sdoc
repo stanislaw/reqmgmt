@@ -1,0 +1,846 @@
+[DOCUMENT]
+TITLE: Zephyr Project Charter
+
+[FREETEXT]
+Exhibit B
+
+Zephyr Project Charter (the “Charter”)
+
+The Linux Foundation
+
+Updated September 1, 2020
+[/FREETEXT]
+
+[SECTION]
+TITLE: Mission of the Zephyr Project (“Zephyr,” or, alternatively, the “Project”).
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+The mission of the Project is to:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. deliver the best-in-class RTOS for connected resource-constrained devices, built to be secure and safe.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. maintain an auditable code base, while taking advantage of community participation; this auditable code base is open source
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. include participation of leading members of this ecosystem, including micro-controller manufacturers, hardware developers, software developers and other members of the ecosystem; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. host the infrastructure for the open source Project and sub-projects, establishing a neutral home for community meetings, events and collaborative discussions and providing structure around the business and technical governance of the Project.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Membership.
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. The Project shall be composed of Platinum, Silver and Associate Members. All Members must be current corporate members of The Linux Foundation at any level to participate in the Project. Anyone may contribute to the Project’s technical codebase regardless of membership status. All participants in the Project, including Associate Members, enjoy the privileges and undertake the
+obligations described in this Charter, as from time to time amended by the Governing Board with the approval of The Linux Foundation and will comply with all such policies as The Linux Foundation Board of Directors and/or the Project may from time to time adopt with notice to members.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. The Associate Member category of membership is limited to non-profits, academic institutions, open source projects, and government entities, and requires approval by the Governing Board, or, if the Governing Board sets criteria for joining as an Associate Member, the meeting of such criteria. If the Associate Member is a membership organization, Associate Membership in Project does not confer any benefits or rights to the members of the Associate Member
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Platinum Members shall be entitled to appoint a representative to the Governing Board, Security Committee, Safety Committee, Marketing Committee and any other committees established by the Governing Board.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. Silver Members shall be entitled to annually elect one representative to the Governing Board for every 10 Silver Members (rounding down to the nearest whole number) up to a maximum of three representatives; provided there shall always be, when there is one or more Silver Members, at least one Silver Member representative, even if there are less than 10 Silver Members.
+<<<
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+e. Platinum Members, Silver Members and Associate Members shall be entitled to:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. participate in Project meetings (other than meetings of the Governing 
+Board and Security Committee, participation in which is limited as 
+described in this Charter), initiatives, events and any other activities; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. identify their company as a member of, or participant in, the Project.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Governing Board
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+Composition - The Governing Board voting members consist of:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. one appointed primary representative (or an Alternate Representative per 
+Section 3.d.) from each Platinum Member;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. elected Silver Member representative(s); and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. the TSC Chair.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[COMPOSITE_REQUIREMENT]
+TITLE: Composition
+STATEMENT: >>>
+Responsibilities of the Governing Board:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. approve a budget directing the use of funds raised from all sources of 
+revenue;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. annually elect a Chair of the Project to preside over Governing Board 
+meetings, authorize expenditures approved by the budget and manage any 
+day-to-day operations;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. annually update the Project Strategic Objectives Document;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iv. oversee all non-technical business and marketing matters;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+v. define and administer any programs for certification, and strategic 
+objectives for the project;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+vi. determining the certification standards that the Project pursues;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+vii. approving procedures for the nomination and election of (1) Silver
+Member representatives to the Governing Board and (2) any officer or
+other positions created by the Governing Board;
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[SECTION]
+TITLE: Conduct of Meetings
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. Governing Board meetings shall be limited to the Governing Board
+representatives and invited guests and follow the requirements for quorum
+and voting outlined in this Charter. The Governing Board may decide
+whether to allow one named representative to attend as an alternate.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. The Governing Board meetings shall be confidential unless approved by
+the Governing Board. The Governing Board may invite guests to
+participate in Governing Board topics. The Governing Board should
+encourage transparency, including the public publication of public minutes
+within a reasonable time following their approval.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Alternate Representative Policy
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+i. Each primary representative on the Governing Board may identify an
+alternate person who may attend meetings and vote in the member’s place
+(the “Alternate Representative”).
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+1. In the case of a Platinum Member, the Alternate Representative
+may be another person from the Platinum Member organization.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+2. In the case of a Silver Member, the Alternative Representative may
+be another person from another Silver Member organization.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+3. In the case of a TSC representative, the Alternative Representative
+may be another person from the voting TSC members.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. The Governing Board primary representative and the Alternate
+Representative may not both attend meetings.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. The Alternate representative may be modified by at least 2-days advanced
+written (electronic) notice to the Governing Board.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iv. Alternative Representatives may not be elected to, or inherit from the
+primary representative, additional roles on the Governing Board.
+<<<
+
+[/SECTION]
+
+[REQUIREMENT]
+STATEMENT: >>>
+e. Committee Chairs may also be invited to attend in a non-voting capacity to
+present updates from their committee.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Technical Steering Committee (“TSC”)
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+a. Composition – the TSC voting members shall consist of:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. two appointed representatives from each Platinum Member;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. one appointed representative from each Silver Member;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. the Security Architect, as defined in Section 6;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iv. the Safety Architect, as defined in Section 7; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+v. appointed representatives from the technical community approved by the
+TSC at the rate of no more than one per quarter.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+b. The TSC will define and maintain documented roles and contribution guidelines
+for the Project technical community, including:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. the process for assigning and revoking roles,
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. the process for acceptance or rejection of contributions and releases,
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. procedures for the submission, approval and closure/archiving of
+sub-projects, and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iv. other processes for the Project community.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Participation in the Project, including in any TSC role, is open to all. The voting
+members of the TSC shall elect a TSC Chair every 2 years, who will be a voting
+member of the Governing Board and expected to act as a liaison between the
+Governing Board and technical leadership of the project.
+<<<
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+d. Responsibilities: The TSC shall also be responsible for:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. coordinating the technical direction of the Project;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. approving individual sub-projects and designated maintainers according to
+a project lifecycle document to be developed by the TSC;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. communicating with external and industry organizations concerning
+Project technical matters;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iv. appointing representatives to work with other open source or open
+standards communities;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+v. establishing election processes for roles in the technical community that
+are not within the scope of a single sub-project;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+vi. creating sub-committees or working groups to focus on cross-project
+technical issues or opportunities;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+vii. subject to the approval of the Governing Board, creating and amending, as
+may be required from time to time, a process document (the “Audit and
+Contribution Process Document”) which outlines and describes the
+procedures for contributing to, maintenance of, and auditing of the
+auditable code base; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+viii. voting on technical matters relating to the code base.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+e. The Security Architect shall serve on the TSC as a “security maintainer,” and is
+responsible for verifying that the Project is following the processes for selected
+standards that the Security Committee recommends and that the Project is
+appropriately documenting features to move from the long term support (“LTS”)
+code base to the auditable code base. It is intended that Maintainers will seek the
+sign-off from the Security Architect prior to implementing significant changes to
+the LTS code base where such changes may result in significant changes in
+functionality between the LTS and auditable code bases.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+f. The Safety Architect shall serve on the TSC as a “safety maintainer” and is
+responsible for verifying that the Project is following the processes for selected
+standards that the Safety Committee recommends and that the Project is
+appropriately documenting features to move from the LTS code base to the
+auditable code base. It is intended that Maintainers will seek the sign-off from the
+Safety Architect prior to implementing significant changes to the LTS code base
+where such changes may result in significant changes in functionality between the
+LTS and auditable code bases..
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Marketing Committee
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+a. Composition – the Marketing Committee voting members shall consist of:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. one appointed voting representative from each Platinum Member;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. non-voting representative(s) from any member; and
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. The Marketing Committee shall elect a Marketing Committee Chair annually,
+who will drive the agenda for the Marketing Committee, coordinate with The
+Linux Foundation and provide updates to the Governing Board as requested.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Any member of the technical community may participate in the Marketing
+Committee in a non-voting capacity.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. Responsibilities: The Marketing Committee shall be responsible for designing,
+developing and executing marketing efforts on behalf of the Governing Board.
+The Marketing Committee is expected to coordinate closely with the Governing
+Board and technical communities to maximize the outreach and visibility of the
+Project throughout the industry.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Security Committee
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+a. Composition – the Security Committee members shall consist of:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. one appointed voting representative from each Platinum Member, plus
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. non-voting Silver Member representatives who shall not count towards
+quorum.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+b. Responsibilities – the Security Committee shall be responsible for:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. the definition of the processes to ensure an auditable code base, as well as
+any associated certification artifacts (“Security Artifacts”);
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. annually elect a Representative on the Security Committee to serve as
+chair of the Security Committee; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. annually elect a security architect (the “Security Architect”), who may be
+different from the chair of the Security Committee.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Security Artifacts – Unless otherwise approved by the Governing Board, only
+Platinum Members will have access to the Security Artifacts released by the
+Committee.
+<<<
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+d. Conduct of Meetings
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. Committee meetings shall be limited to the Security Committee
+representatives and invited guests and follow the requirements for quorum
+and voting outlined in this Charter. The Security Committee may decide
+whether to allow one named representative to attend as an alternate.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. Committee meetings shall be confidential unless approved by the Security
+Committee. The Committee may invite guests to participate in Security
+Committee topics. Except as approved by the Committee, minutes of the
+meetings of the Security Committee will not be published.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Safety Committee
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+a. Composition – the Safety Committee members shall consist of:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. one appointed voting representative from each Platinum Member, plus
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. non-voting Silver Member representatives who shall not count towards
+quorum.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+b. Responsibilities – the Safety Committee shall be responsible for:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. the definition of the processes to ensure an auditable code base, as well as
+any associated certification artifacts (“Safety Artifacts”);
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. annually elect a Representative on the Safety Committee to serve as
+chair of the Safety Committee; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+iii. annually elect a safety architect (the “Safety Architect”), who may be
+different from the chair of the Safety Committee.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Safety Artifacts – Unless otherwise approved by the Governing Board, only
+Platinum Members will have access to the Safety Artifacts released by the
+Committee.
+<<<
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+d. Conduct of Meetings
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+i. Committee meetings shall be limited to the Safety Committee
+representatives and invited guests and follow the requirements for quorum
+and voting outlined in this Charter. The Safety Committee may decide
+whether to allow one named representative to attend as an alternate.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+ii. The Committee meetings shall be confidential unless approved by the
+Safety Committee. The Committee may invite guests to participate in 
+Security Committee topics. Except as approved by the Safety Committee,
+minutes of the meetings of the Security Committee will not be published.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Voting
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. While it is the goal of the project to operate as a consensus based community, if
+any decision requires a vote to move forward, the representatives of the
+Governing Board, TSC, Marketing Committee Safety Committee or Security
+Committee, as applicable, shall vote on a one vote per representative basis.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. Quorum for Governing Board, TSC, Marketing Committee, Safety Committee
+and Security Committee meetings shall require 60% of the voting representatives
+of the Governing Board, TSC, Marketing Committee Safety Committee or
+Security Committee, as applicable. The Governing Board, TSC, Marketing
+Committee, Safety Committee or Security Committee may continue to meet if
+quorum is not met, but shall be prevented from making any decisions at the
+meeting. Excepted as provided under Section 14.d. or Section 15.a., decisions by
+vote at a meeting shall require a majority vote, provided quorum is met. Excepted
+as provided under Section 14.d. or Section 15.a., decisions by electronic vote
+without a meeting shall require a majority of all voting representatives. Voting
+rights for a representative who misses three consecutive meetings are subject to
+suspension and suspended representatives do not count towards the quorum
+requirement. A representative’s suspension will end and voting rights restored at
+the start of the next attended meeting.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Decisions by vote shall be based on a majority vote, provided that at least sixty
+percent (60%) of the Governing Board, TSC, Marketing Committee, Safety
+Committee, Security Committee or other committee representatives, as
+applicable, must be either present or participating electronically or by written
+action in order to conduct a valid vote.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. In the event of a tied vote with respect to an action by the Governing Board, TSC,
+Marketing Committee, Security Committee, Safety Committee or other committee
+created by the Governing Board, the chair of such board or committee shall be
+entitled to submit a tie-breaking vote.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+e. The Chair of the Governing Board, TSC, Marketing Committee, Security
+Committee, Safety Committee or other committee created by the Governing
+Board, as applicable, may conduct any vote using an appropriate electronic voting
+mechanism including the collection of votes via email. In the case of an
+electronic vote where the topic has not been previously discussed in a meeting, if
+any two voting representatives object to the electronic vote, they shall
+automatically force the topic onto the agenda at the next meeting at which point
+the decision may then be put up for a vote.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Antitrust Guidelines
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. All members shall abide by The Linux Foundation Antitrust Policy available at
+http://www.linuxfoundation.org/antitrust-policy.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. All members shall encourage open participation from any organization able to
+meet the membership requirements, regardless of competitive interests. Put
+another way, the Governing Board shall not seek to exclude members based on
+any criteria, requirements or reasons other than those used for all members.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Code of Conduct
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. The Governing Board shall adopt a specific Zephyr code of conduct, with
+approval from The Linux Foundation.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Budget
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. The Governing Board shall approve an annual budget and never commit to spend
+in excess of funds raised. The budget shall be consistent with the non-profit
+mission of The Linux Foundation.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. The Linux Foundation shall provide the Governing Board with regular reports of
+spend levels against the budget. In no event will The Linux Foundation have any
+obligation to undertake any action on behalf of the Project or otherwise related to
+the Project that will not be covered in full by funds raised by the Project. In the
+event of any unbudgeted or otherwise unfunded obligation arises related to the
+Project, The Linux Foundation will coordinate with the Governing Board to
+address gap funding requirements.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: General & Administrative Expenses
+
+[REQUIREMENT]
+STATEMENT: >>>
+a.  The Linux Foundation shall have custody of and final authority over the usage of
+any fees, funds and other cash receipts.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. A General & Administrative (G&A) fee will be applied by the Linux Foundation
+to funds raised to cover Finance, Accounting, and operations. The G&A fee shall
+equal 9% of the Project’s first $1,000,000 of gross receipts and 6% of the
+Project’s gross receipts over $1,000,000.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Under no circumstances shall The Linux Foundation be expected or required to
+undertake any action on behalf of the Project that is inconsistent with the tax
+exempt purpose of The Linux Foundation.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: General Rules and Operations.
+
+[COMPOSITE_REQUIREMENT]
+STATEMENT: >>>
+The Governing Board shall:
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. demonstrate plans and the means to coordinate with the open source project’s
+developer community, including on topics such as branding, logos, and other
+collateral that will represent the community;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. engage in a professional manner consistent with maintaining a cohesive
+community, while also maintaining the goodwill and esteem of The Linux
+Foundation in the open source software community;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. respect the rights of all trademark owners, including any branding and usage
+guidelines;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. engage The Linux Foundation for all press and analyst relations activities;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+e. upon request, provide information regarding project participation, including
+information regarding attendance at project-sponsored events, to The Linux
+Foundation;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+f. engage The Linux Foundation for any front-facing marketing websites directly for
+the Project; and
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+g. operate under such rules and procedures as may from time to time be approved by
+the Project’s Governing Board and confirmed by The Linux Foundation.
+<<<
+
+[/COMPOSITE_REQUIREMENT]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Intellectual Property Policy
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. All new inbound code contributions to the Project shall be made under the
+Apache License, Version 2.0 (available at
+http://www.apache.org/licenses/LICENSE-2.0) accompanied by a Developer
+Certificate of Origin sign-off (http://developercertificate.org) that is submitted
+through a Board-approved contribution process which will bind the authorized
+contributor and, if not self-employed, their employer to the licenses expressly
+granted in the Apache License, Version 2.0, only with respect to such
+contribution, with no limitation, estoppel or effect on any other member of the
+Project;
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+b. All outbound code will be made available under the Apache License, Version 2.0.
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+c. Contributed documentation will be received and made available by the Project
+under the Creative Commons Attribution 4.0 International License (available at
+http://creativecommons.org/licenses/by/4.0/).
+<<<
+
+[REQUIREMENT]
+STATEMENT: >>>
+d. If an alternative inbound or outbound license is required for compliance with the
+license for a leveraged open source project or is otherwise required to achieve the
+Project’s mission, the Governing Board may approve the use of an alternative
+license for inbound or outbound contributions on an exception basis. Any
+exceptions must be approved by a two-thirds vote of the entire Governing Board
+and by the Linux Foundation. Please email licensing@zephyrproject.org to
+obtain exception approval.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Amendments
+
+[REQUIREMENT]
+STATEMENT: >>>
+a. This charter may be amended by a two-thirds vote of the entire Governing Board,
+subject to approval by The Linux Foundation.
+<<<
+
+[/SECTION]
