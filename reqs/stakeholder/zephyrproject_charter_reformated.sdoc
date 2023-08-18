@@ -139,6 +139,23 @@ TITLE: Governing Board
 [SECTION]
 TITLE: Composition
 
+[REQUIREMENT]
+UID: ZEPHYRPROJECT_CHARTER-3.a
+STATEMENT: >>>
+| [The Zephyr Project Governing Board] voting members consist of:
+| 
+|   i.   one appointed primary representative (or an Alternate Representative per Section 3.d.) from each Platinum Member; and
+|   ii.  elected Silver Member representative(s); and
+|   iii. the TSC Chair.
+|
+<<<
+COMMENT: >>>
+REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
+before passing it to the RST parser.  This creates an invalid numbered or bulleted list.
+The temporary solution is to make the entire thing a (literal) text block, but this removes
+the additional formatting and number generation.
+<<<
+
 [/SECTION]
 
 [/SECTION]
