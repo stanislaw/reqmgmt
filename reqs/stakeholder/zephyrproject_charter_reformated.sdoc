@@ -372,4 +372,14 @@ The temporary solution is to make the entire thing a (literal) text block, but t
 the additional formatting and number generation.
 <<<
 
+[REQUIREMENT]
+UID: ZEPHYRPROJECT_CHARTER-4.c
+TITLE: TSC Participation Qualifications
+STATEMENT: >>>
+Participation in the [Zephyr] Project, including in any TSC role, is open to all. The voting
+members of the TSC shall elect a TSC Chair every 2 years, who will be a voting
+member of the Governing Board and expected to act as a liaison between the
+Governing Board and technical leadership of the project.
+<<<
+
 [/SECTION]
