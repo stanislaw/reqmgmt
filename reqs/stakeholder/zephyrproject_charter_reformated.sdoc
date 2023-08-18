@@ -136,11 +136,9 @@ identify their company as a member of, or participant in, the Project.
 [SECTION]
 TITLE: Governing Board
 
-[SECTION]
-TITLE: Composition
-
 [REQUIREMENT]
 UID: ZEPHYRPROJECT_CHARTER-3.a
+TITLE: Composition
 STATEMENT: >>>
 | [The Zephyr Project Governing Board] voting members consist of:
 | 
@@ -155,8 +153,6 @@ before passing it to the RST parser.  This creates an invalid numbered or bullet
 The temporary solution is to make the entire thing a (literal) text block, but this removes
 the additional formatting and number generation.
 <<<
-
-[/SECTION]
 
 [SECTION]
 TITLE: Responsibilities
