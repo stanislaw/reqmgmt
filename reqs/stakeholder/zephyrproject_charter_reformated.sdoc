@@ -534,4 +534,21 @@ Project throughout the industry.
 [SECTION]
 TITLE: Security Committee
 
+[REQUIREMENT]
+UID: ZEPHYRPROJECT_CHARTER-6.a
+TITLE: Composition
+STATEMENT: >>>
+| [The Zephyr Project] Security Committee members shall consist of:
+| 
+|   i.   one appointed voting representative from each Platinum Member, plus
+|   ii.  non-voting Silver Member representatives who shall not count towards quorum.
+|
+<<<
+COMMENT: >>>
+REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
+before passing it to the RST parser.  This creates an invalid numbered or bulleted list.
+The temporary solution is to make the entire thing a (literal) text block, but this removes
+the additional formatting and number generation.
+<<<
+
 [/SECTION]
