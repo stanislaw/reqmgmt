@@ -331,9 +331,45 @@ present updates from their committee.
 [SECTION]
 TITLE: Technical Steering Committee (“TSC”)
 
-[SECTION]
+[REQUIREMENT]
+UID: ZEPHYRPROJECT_CHARTER-4.a
 TITLE: Composition
+STATEMENT: >>>
+| [The Zephyr Project Technical Steering Committee] voting members shall consist of:
+| 
+|   i.   two appointed representatives from each Platinum Member;
+|   ii.  one appointed representative from each Silver Member;
+|   iii. the Security Architect, as defined in Section 6;
+|   iv.  the Safety Architect, as defined in Section 7; and
+|   v.   appointed representatives from the technical community approved by the TSC at the rate of no more than one per quarter.
+|
+<<<
+COMMENT: >>>
+REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
+before passing it to the RST parser.  This creates an invalid numbered or bulleted list.
+The temporary solution is to make the entire thing a (literal) text block, but this removes
+the additional formatting and number generation.
+<<<
 
-[/SECTION]
+[REQUIREMENT]
+UID: ZEPHYRPROJECT_CHARTER-4.b
+TITLE: Responsibilities for defining Technical Roles and Contribution Guidelines
+STATEMENT: >>>
+| [The Zephyr Project Technical Steering Committee] will define and
+| maintain documented roles and contribution guidelines for the
+| [Zephyr] Project technical community, including:
+| 
+|   i.   the process for assigning and revoking roles,
+|   ii.  the process for acceptance or rejection of contributions and releases,
+|   iii. procedures for the submission, approval and closure/archiving of sub-projects, and
+|   iv.  other processes for the Project community.
+|
+<<<
+COMMENT: >>>
+REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
+before passing it to the RST parser.  This creates an invalid numbered or bulleted list.
+The temporary solution is to make the entire thing a (literal) text block, but this removes
+the additional formatting and number generation.
+<<<
 
 [/SECTION]
