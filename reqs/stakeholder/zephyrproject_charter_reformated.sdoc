@@ -140,12 +140,11 @@ TITLE: Governing Board
 UID: ZEPHYRPROJECT_CHARTER-3.a
 TITLE: Composition
 STATEMENT: >>>
-| [The Zephyr Project Governing Board] voting members consist of:
-| 
-|   i.   one appointed primary representative (or an Alternate Representative per Section 3.d.) from each Platinum Member; and
-|   ii.  elected Silver Member representative(s); and
-|   iii. the TSC Chair.
-|
+[The Zephyr Project Governing Board] voting members consist of:
+
+i.   one appointed primary representative (or an Alternate Representative per Section 3.d.) from each Platinum Member; and
+ii.  elected Silver Member representative(s); and
+iii. the TSC Chair.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -269,19 +268,18 @@ TITLE: Alternate Representative Policy
 [REQUIREMENT]
 UID: ZEPHYRPROJECT_CHARTER-3.d.i
 STATEMENT: >>>
-| Each primary representative on the [Zephyr Project] Governing Board may identify an
-| alternate person who may attend meetings and vote in the member’s place
-| (the “Alternate Representative”).
-| 
-| 1. In the case of a Platinum Member, the Alternate Representative
-| may be another person from the Platinum Member organization.
-| 
-| 2. In the case of a Silver Member, the Alternative Representative may
-| be another person from another Silver Member organization.
-| 
-| 3. In the case of a TSC representative, the Alternative Representative
-| may be another person from the voting TSC members.
-|
+Each primary representative on the [Zephyr Project] Governing Board may identify an
+alternate person who may attend meetings and vote in the member’s place
+(the “Alternate Representative”).
+
+1. In the case of a Platinum Member, the Alternate Representative
+may be another person from the Platinum Member organization.
+
+2. In the case of a Silver Member, the Alternative Representative may
+be another person from another Silver Member organization.
+
+3. In the case of a TSC representative, the Alternative Representative
+may be another person from the voting TSC members.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -331,14 +329,13 @@ TITLE: Technical Steering Committee (“TSC”)
 UID: ZEPHYRPROJECT_CHARTER-4.a
 TITLE: Composition
 STATEMENT: >>>
-| [The Zephyr Project Technical Steering Committee] voting members shall consist of:
-| 
-|   i.   two appointed representatives from each Platinum Member;
-|   ii.  one appointed representative from each Silver Member;
-|   iii. the Security Architect, as defined in Section 6;
-|   iv.  the Safety Architect, as defined in Section 7; and
-|   v.   appointed representatives from the technical community approved by the TSC at the rate of no more than one per quarter.
-|
+[The Zephyr Project Technical Steering Committee] voting members shall consist of:
+
+i.   two appointed representatives from each Platinum Member;
+ii.  one appointed representative from each Silver Member;
+iii. the Security Architect, as defined in Section 6;
+iv.  the Safety Architect, as defined in Section 7; and
+v.   appointed representatives from the technical community approved by the TSC at the rate of no more than one per quarter.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -351,15 +348,14 @@ the additional formatting and number generation.
 UID: ZEPHYRPROJECT_CHARTER-4.b
 TITLE: Responsibilities for defining Technical Roles and Contribution Guidelines
 STATEMENT: >>>
-| [The Zephyr Project Technical Steering Committee] will define and
-| maintain documented roles and contribution guidelines for the
-| [Zephyr] Project technical community, including:
-| 
-|   i.   the process for assigning and revoking roles,
-|   ii.  the process for acceptance or rejection of contributions and releases,
-|   iii. procedures for the submission, approval and closure/archiving of sub-projects, and
-|   iv.  other processes for the Project community.
-|
+[The Zephyr Project Technical Steering Committee] will define and
+maintain documented roles and contribution guidelines for the
+[Zephyr] Project technical community, including:
+
+i.   the process for assigning and revoking roles,
+ii.  the process for acceptance or rejection of contributions and releases,
+iii. procedures for the submission, approval and closure/archiving of sub-projects, and
+iv.  other processes for the Project community.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -487,11 +483,10 @@ TITLE: Marketing Committee
 UID: ZEPHYRPROJECT_CHARTER-5.a
 TITLE: Composition
 STATEMENT: >>>
-| [The Zephyr Project] Marketing Committee voting members shall consist of:
-| 
-|   i.   one appointed voting representative from each Platinum Member;
-|   ii.  non-voting representative(s) from any member.
-|
+[The Zephyr Project] Marketing Committee voting members shall consist of:
+
+i.   one appointed voting representative from each Platinum Member;
+ii.  non-voting representative(s) from any member.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -538,11 +533,10 @@ TITLE: Security Committee
 UID: ZEPHYRPROJECT_CHARTER-6.a
 TITLE: Composition
 STATEMENT: >>>
-| [The Zephyr Project] Security Committee members shall consist of:
-| 
-|   i.   one appointed voting representative from each Platinum Member, plus
-|   ii.  non-voting Silver Member representatives who shall not count towards quorum.
-|
+[The Zephyr Project] Security Committee members shall consist of:
+
+i.   one appointed voting representative from each Platinum Member, plus
+ii.  non-voting Silver Member representatives who shall not count towards quorum.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
@@ -623,11 +617,10 @@ TITLE: Safety Committee
 UID: ZEPHYRPROJECT_CHARTER-7.a
 TITLE: Composition
 STATEMENT: >>>
-| [The Zephyr Project] Safety Committee members shall consist of:
-| 
-|   i.   one appointed voting representative from each Platinum Member, plus
-|   ii.  non-voting Silver Member representatives who shall not count towards quorum.
-|
+[The Zephyr Project] Safety Committee members shall consist of:
+
+i.   one appointed voting representative from each Platinum Member, plus
+ii.  non-voting Silver Member representatives who shall not count towards quorum.
 <<<
 COMMENT: >>>
 REVISIT: Strict version 0.0.43 strips the trailing blank line from the multi-line statement
