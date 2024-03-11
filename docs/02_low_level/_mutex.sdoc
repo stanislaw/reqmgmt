@@ -1,0 +1,59 @@
+[DOCUMENT]
+TITLE: Mutex
+REQ_PREFIX: ZEP-
+
+[GRAMMAR]
+ELEMENTS:
+- TAG: REQUIREMENT
+  FIELDS:
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TYPE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMPONENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: USER_STORY
+    TYPE: String
+    REQUIRED: False
+  - TITLE: DISCUSSION_DATE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: REVIEW_COMMENT
+    TYPE: String
+    REQUIRED: False
+  RELATIONS:
+  - TYPE: Parent
+
+[REQUIREMENT]
+UID: ZEP-91
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Mutex
+TITLE: Mutex Kernel Object
+STATEMENT: >>>
+Zephyr shall support resource synchronization. (Note synchronization can be for memory access, and mutex may be one implementation, but not the only one).
+<<<
+USER_STORY: >>>
+As a Zephyr OS user I want to be able to sychonize threads when accessing common resources, where the thread shall have the option to:
+- wait eternally until the resources becomes available.
+- immediately return with a negative message if the resource is not available and allow the thread to continue.
+- wait for a given time for the resource to become available or return with a negative message.
+<<<
+DISCUSSION_DATE: >>>
+2022/5/25 - ok
+<<<
+REVIEW_COMMENT: >>>
+Concern over phrase recursive.  What is it MUTEXing? Memory Management?
+<<<
