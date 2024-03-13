@@ -1,0 +1,148 @@
+[DOCUMENT]
+TITLE: Semaphore
+REQ_PREFIX: ZEP-
+
+[GRAMMAR]
+ELEMENTS:
+- TAG: REQUIREMENT
+  FIELDS:
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TYPE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMPONENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: USER_STORY
+    TYPE: String
+    REQUIRED: False
+  - TITLE: DISCUSSION_DATE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: REVIEW_COMMENT
+    TYPE: String
+    REQUIRED: False
+  RELATIONS:
+  - TYPE: Parent
+
+[SECTION]
+TITLE: Take semaphore
+
+[REQUIREMENT]
+UID: ZEP-127
+TITLE: Take semaphore with non-zero count
+STATEMENT: >>>
+While the semaphore counter is larger than zero, when the semaphore is taken by a task, the counter shall be decremented by one.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-128
+TITLE: Take semaphore with zero count
+STATEMENT: >>>
+While the count is zero, taking of a semaphore by a task shall make the calling thread block until:
+
+1) The TIMEOUT period has passed.
+
+OR
+
+2) The semaphore count has been incremented by another thread.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Thread Synchronization (ANAS)
+
+[REQUIREMENT]
+UID: ZEP-99
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Counting Semaphore
+STATEMENT: >>>
+The system must implement a semaphore synchronization primitive for coordinating access to shared resources among multiple tasks.
+<<<
+USER_STORY: >>>
+As a software developer tasked with implementing resource management in our real-time operating system (RTOS), I want to integrate a semaphore synchronization primitive to facilitate coordinated access to shared resources among multiple tasks.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-990001
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Counting Semaphore Creation
+STATEMENT: >>>
+A mechanism shall be established to create semaphores, both statically at build time and dynamically at runtime, ensuring deterministic operation with bounded execution times.
+<<<
+USER_STORY: >>>
+As a software developer tasked with implementing resource management in our real-time operating system (RTOS), I want to integrate a semaphore synchronization primitive to facilitate coordinated access to shared resources among multiple tasks.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
+UID: ZEP-990002
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore Initialization
+STATEMENT: >>>
+The mechanism shall support the initialization of semaphore values to regulate the number of tasks or resources concurrently accessing a shared resource. Initialization options shall include specifying initial semaphore values and attributes.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
+UID: ZEP-990003
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition and release
+STATEMENT: >>>
+The mechanism shall provide functions enabling tasks to acquire (take) and release (give) semaphores, ensuring atomic and thread-safe operations for semaphore acquisition and release.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
+UID: ZEP-990004
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore Counting
+STATEMENT: >>>
+The system shall support counting semaphores that allow multiple tasks to increment and decrement them to manage resource availability or access permissions. Counting semaphores must accurately track resource usage and prevent overflows or underflows.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
+UID: ZEP-990005
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore Timeout
+STATEMENT: >>>
+Options shall be provided to specify timeout periods when attempting to acquire semaphores, allowing tasks to set a maximum wait time for semaphore acquisition. The system shall return an error if the semaphore is not acquired within the specified time.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[/SECTION]

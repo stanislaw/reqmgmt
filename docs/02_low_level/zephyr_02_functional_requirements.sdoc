@@ -123,9 +123,6 @@ RELATIONS:
 
 [/SECTION]
 
-[DOCUMENT_FROM_FILE]
-FILE: docs/02_low_level/_c_library.sdoc
-
 [SECTION]
 TITLE: Device Driver API
 
@@ -234,9 +231,6 @@ Zephyr shall provide an interface to assign a specific handler for a fatal error
 
 [/SECTION]
 
-[DOCUMENT_FROM_FILE]
-FILE: docs/02_low_level/_file_system.sdoc
-
 [SECTION]
 TITLE: Interrupts
 
@@ -321,9 +315,6 @@ DISCUSSION_DATE: >>>
 <<<
 
 [/SECTION]
-
-[DOCUMENT_FROM_FILE]
-FILE: docs/02_low_level/_logging.sdoc
 
 [SECTION]
 TITLE: Memory protection
@@ -741,6 +732,9 @@ DISCUSSION_DATE: >>>
 [/SECTION]
 
 [DOCUMENT_FROM_FILE]
+FILE: docs/02_low_level/_semaphore.sdoc
+
+[DOCUMENT_FROM_FILE]
 FILE: docs/02_low_level/_mutex.sdoc
 
 [SECTION]
@@ -843,21 +837,6 @@ USER_STORY: >>>
 <<<
 DISCUSSION_DATE: >>>
 2022/5/25 - ok
-<<<
-
-[REQUIREMENT]
-UID: ZEP-99
-STATUS: Draft
-TYPE: Functional
-COMPONENT: Thread Communication
-TITLE: Traditional Counting Semaphore
-STATEMENT: >>>
-Zephyr shall provide a counting semaphore abstraction for queuing and mutual exclusion.
-<<<
-USER_STORY: >>>
-As a Zephyr OS user I want to... ???,
-
-Architectural & interface REQ
 <<<
 
 [REQUIREMENT]
@@ -1373,3 +1352,12 @@ RELATIONS:
 
 [DOCUMENT_FROM_FILE]
 FILE: docs/02_low_level/_tracing.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: docs/02_low_level/_logging.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: docs/02_low_level/_c_library.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: docs/02_low_level/_file_system.sdoc
