@@ -1108,7 +1108,285 @@ execution explicitly.
 [/SECTION]
 
 [SECTION]
+TITLE: Counting Semaphores
+
+[SECTION]
+TITLE: Semaphore lifecycle
+
+[SECTION]
+TITLE: Initialize semaphore
+
+[REQUIREMENT]
+UID: ZEP-127
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Build-time registration for pre-kernel init phase notification
+STATEMENT: >>>
+Zephyr Counting Semaphores shall build-time register with Zephyr System Initialization for notification of running in the Zephyr Pre-Kernel initialization phase.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-128
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Count Semaphore pre-Kernel notification initializes statically defined semaphore objects
+STATEMENT: >>>
+When the Counting Semaphores service is notified of the Zephyr Pre-Kernel System Initialization phase,
+
+Zephyr Counting Semaphores shall initialize all statically defined semaphores.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-129
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore dynamic initialization
+STATEMENT: >>>
+Zephyr Counting Semaphores shall expose an interface to dynamically initialize a Counting Semaphore which requires the following information:
+
+- initial count of the Counting Semaphore; and
+- limit of the Counting Semaphore.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-130
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphores Static Object Init Failures Cause Build Errors
+STATEMENT: >>>
+While a Counting Semaphore is statically allocated,
+
+If the Counting Semaphore is configured with an invalid set of initialization parameter values,
+
+the Zephyr Build System shall fail the build and report the point of failure.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-131
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Dynamic Object Init Failures Reports Failure Reason
+STATEMENT: >>>
+While a Counting Semaphore is dynamically allocated,
+
+If the Counting Semaphore initialization is configured with an invalid set of initialization parameter values,
+
+the Counting Semaphore initialization shall report the reason for the failure.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Take semaphore
+
+[REQUIREMENT]
+UID: ZEP-139
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Take when Count is >0
+STATEMENT: >>>
+While the Count of this Counting Semaphore is > 0,
+
+When the Counting Semaphore Take is requested,
+
+the Counting Semaphore shall do all of the following:
+
+- atomically reduce the Count of this Counting Semaphore by 1; and
+- indicate to the Taking thread that the Take request was successful.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-140
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Take blocked when Count is 0
+STATEMENT: >>>
+While the Count of this Counting Semaphore is 0,
+
+When the Counting Semaphore Take is requested,
+
+the Counting Semaphore shall block the thread requesting a Counting Semaphore Take.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-141
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphore
+TITLE: Counting Semaphore Take times out
+STATEMENT: >>>
+When a Counting Semaphore Take request timeout has expired,
+
+the Counting Semaphore shall unblock the waiting thread indicating the Take request failed due to a timeout.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-142
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Take Request Invalid Parameter is Catastrophic Error
+STATEMENT: >>>
+When the Counting Semaphore Take is requested,
+
+If the Counting Semaphore Take parameters are invalid,
+
+Zephyr shall report a catastrophic failure.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-143
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Take Request From Interrupt Context with Non-Immediate Timeout is Catastrophic Error
+STATEMENT: >>>
+When the Counting Semaphore Take is requested from Interrupt Context,
+
+If the Counting Semaphore Take timeout is non-immediate,
+
+Zephyr shall report a catastrophic failure.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Give semaphore
+
+[REQUIREMENT]
+UID: ZEP-136
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Give unblocks pending Take by another thread
+STATEMENT: >>>
+While a thread is blocked waiting to Take from this Counting Semaphore,
+
+When the Counting Semaphore Give is requested,
+
+the Counting Semaphore shall do all of the following:
+
+- unblock the waiting thread indicating the Take request was successful; and
+- indicate to the Giving thread that the Give request was successful.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-137
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Give without pending Take increases count by 1
+STATEMENT: >>>
+While no thread is blocked waiting to Take from this Counting Semaphore,
+
+When the Counting Semaphore Give is requested,
+
+the Counting Semaphore shall do all of the following:
+
+- increase the count of this semaphore by 1, up to the configured limit of this Semaphore; and
+- indicate to the Giving thread that the Give request was successful.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-138
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Give Request Invalid Parameter is Catastrophic Error
+STATEMENT: >>>
+When the Counting Semaphore Give is requested,
+
+If the Counting Semaphore Give parameters are invalid,
+
+Zephyr shall report a catastrophic failure.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Get semaphore count
+
+[REQUIREMENT]
+UID: ZEP-132
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Exposes Current Count
+STATEMENT: >>>
+When the Counting Semaphore current count is requested,
+
+Zephyr shall report the current count of the Counting Semaphore.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-133
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Current Count Request Invalid Parameter is Catastrophic Error
+STATEMENT: >>>
+When the Counting Semaphore current count is requested,
+
+If the Counting Semaphore current count parameters are invalid,
+
+Zephyr shall report a catastrophic failure.
+<<<
+
+[/SECTION]
+
+[SECTION]
+TITLE: Reset semaphore count
+
+[REQUIREMENT]
+UID: ZEP-134
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphores Exposes Ability to Reset Count to Zero
+STATEMENT: >>>
+When the Counting Semaphore reset is requested,
+
+Zephyr shall do all of the following:
+
+- set to zero the current count of the Counting Semaphore, and
+- abort all other outstanding attempts to interact with the Counting Semaphore.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-135
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Counting Semaphores
+TITLE: Counting Semaphore Reset Request Invalid Parameter is Catastrophic Error
+STATEMENT: >>>
+When the Counting Semaphore reset is requested,
+
+If the Counting Semaphore reset parameters are invalid,
+
+Zephyr shall report a catastrophic failure.
+<<<
+
+[/SECTION]
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
 TITLE: Thread Synchronization
+
+[SECTION]
+TITLE: Semaphore lifecycle
+
+[SECTION]
+TITLE: Initialize semaphore
 
 [REQUIREMENT]
 UID: ZEP-SEMAPHORE-001
@@ -1137,6 +1415,33 @@ RELATIONS:
   VALUE: ZEP-99
 
 [REQUIREMENT]
+UID: ZEP-SEMAPHORE-004
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Initialialization with inital semaphore value
+STATEMENT: >>>
+When initializing a counting semaphore, the initial semaphore value shall be set.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
+UID: ZEP-SEMAPHORE-016
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Initialialization with maximum count value
+STATEMENT: >>>
+When initializing a counting semaphore, the maximum permitted count a semaphore
+can have shall be set.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
+[REQUIREMENT]
 UID: ZEP-SEMAPHORE-003
 STATUS: Draft
 TYPE: Functional
@@ -1149,17 +1454,23 @@ be used when the semaphore is initialized.
 <<<
 
 [REQUIREMENT]
-UID: ZEP-SEMAPHORE-004
+UID: ZEP-SEMAPHORE-017
 STATUS: Draft
 TYPE: Functional
 COMPONENT: Semaphore
-TITLE: Initialialization with inital semaphore value
+TITLE: Semaphore Initialization Option Validation
 STATEMENT: >>>
-When initializing a counting semaphore, the initial semaphore value shall be set.
+When initializing a counting semaphore, where the maximum permitted count of a semaphore is invalid,
+the Zephyr RTOS shall return an error indicating invalid values.
 <<<
 RELATIONS:
 - TYPE: Parent
   VALUE: ZEP-99
+
+[/SECTION]
+
+[SECTION]
+TITLE: Take semaphore
 
 [REQUIREMENT]
 UID: ZEP-SEMAPHORE-005
@@ -1176,19 +1487,6 @@ RELATIONS:
   VALUE: ZEP-99
 
 [REQUIREMENT]
-UID: ZEP-SEMAPHORE-006
-STATUS: Draft
-TYPE: Functional
-COMPONENT: Semaphore
-TITLE: Semaphore Counting
-STATEMENT: >>>
-The Zephyr RTOS shall track resource usage of a semaphore.
-<<<
-RELATIONS:
-- TYPE: Parent
-  VALUE: ZEP-99
-
-[REQUIREMENT]
 UID: ZEP-SEMAPHORE-007
 STATUS: Draft
 TYPE: Functional
@@ -1196,7 +1494,6 @@ COMPONENT: Semaphore
 TITLE: Semaphore Timeout
 STATEMENT: >>>
 When attempting to take (acquire) a semaphore, the Zephyr RTOS shall accept options that specify timeout periods, allowing threads to set a maximum wait time for semaphore acquisition.
-
 <<<
 RELATIONS:
 - TYPE: Parent
@@ -1230,6 +1527,11 @@ RELATIONS:
 - TYPE: Parent
   VALUE: ZEP-99
 
+[/SECTION]
+
+[SECTION]
+TITLE: Give semaphore
+
 [REQUIREMENT]
 UID: ZEP-SEMAPHORE-010
 STATUS: Draft
@@ -1244,42 +1546,31 @@ RELATIONS:
 - TYPE: Parent
   VALUE: ZEP-99
 
+[/SECTION]
+
+[/SECTION]
+
+[REQUIREMENT]
+UID: ZEP-SEMAPHORE-006
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore resource usage
+STATEMENT: >>>
+The Zephyr RTOS shall track resource usage of a semaphore.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-99
+
 [REQUIREMENT]
 UID: ZEP-SEMAPHORE-011
 STATUS: Draft
 TYPE: Functional
 COMPONENT: Semaphore
-TITLE: Semaphore Counting
+TITLE: Semaphore overflow/underflow prevention
 STATEMENT: >>>
 The Zephyr RTOS shall prevent overflows or underflows of the semaphore count.
-<<<
-RELATIONS:
-- TYPE: Parent
-  VALUE: ZEP-99
-
-[REQUIREMENT]
-UID: ZEP-SEMAPHORE-016
-STATUS: Draft
-TYPE: Functional
-COMPONENT: Semaphore
-TITLE: Initialialization with maximum count value
-STATEMENT: >>>
-When initializing a counting semaphore, the maximum permitted count a semaphore
-can have shall be set.
-<<<
-RELATIONS:
-- TYPE: Parent
-  VALUE: ZEP-99
-
-[REQUIREMENT]
-UID: ZEP-SEMAPHORE-017
-STATUS: Draft
-TYPE: Functional
-COMPONENT: Semaphore
-TITLE: Semaphore Initialization Option Validation
-STATEMENT: >>>
-When initializing a counting semaphore, where the maximum permitted count of a semaphore is invalid,
-the Zephyr RTOS shall return an error indicating invalid values.
 <<<
 RELATIONS:
 - TYPE: Parent
